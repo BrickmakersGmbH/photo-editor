@@ -17,10 +17,10 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     //To hold the drawings and stickers
     @IBOutlet weak var canvasImageView: UIImageView!
-
+    
     @IBOutlet weak var topToolbar: UIView!
     @IBOutlet weak var bottomToolbar: UIView!
-
+    
     @IBOutlet weak var topGradient: UIView!
     @IBOutlet weak var bottomGradient: UIView!
     
@@ -38,6 +38,9 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var rotateButton: UIButton!
+    
+    
     
     public var image: UIImage?
     /**
@@ -71,7 +74,7 @@ public final class PhotoEditorViewController: UIViewController {
     
     
     var stickersViewController: StickersViewController!
-
+    
     //Register Custom font before we load XIB
     public override func loadView() {
         registerFont()
@@ -130,6 +133,23 @@ public final class PhotoEditorViewController: UIViewController {
         let size = image.suitableSize(widthLimit: UIScreen.main.bounds.width)
         imageViewHeightConstraint.constant = (size?.height)!
     }
+    
+    @IBAction func rotateButtonTapped(_ sender: Any) {
+        DispatchQueue.main.async(execute: {
+            let imageOrig = self.canvasView.toImage()
+            self.clearButtonTapped(self)
+            
+            let image = imageOrig.rotate(radians:  .pi/2)!
+            self.imageView.image = image
+            self.image = image
+            
+            let size = image.suitableSize(widthLimit: UIScreen.main.bounds.width)
+            self.imageViewHeightConstraint.constant = (size?.height)!
+            
+        })
+    }
+    
+    
     
     func hideToolbar(hide: Bool) {
         topToolbar.isHidden = hide

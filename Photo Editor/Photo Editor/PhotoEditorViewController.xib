@@ -31,6 +31,7 @@
                 <outlet property="drawButton" destination="Qm4-f6-DBr" id="yHl-a1-GgN"/>
                 <outlet property="imageView" destination="5rw-9v-ExQ" id="5lP-en-DGc"/>
                 <outlet property="imageViewHeightConstraint" destination="DdY-qb-dfp" id="ZY9-Em-cs4"/>
+                <outlet property="rotateButton" destination="LT8-89-B1X" id="6Cg-da-vnU"/>
                 <outlet property="saveButton" destination="mW4-Jz-sic" id="1Uj-nU-EU1"/>
                 <outlet property="shareButton" destination="zlw-H0-WcJ" id="OZv-z0-8s8"/>
                 <outlet property="stickerButton" destination="PLX-iy-2Rc" id="tzt-tW-R1r"/>
@@ -83,13 +84,23 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Doi-2Z-r5q">
-                            <rect key="frame" x="237" y="0.0" width="165" height="60"/>
+                            <rect key="frame" x="192" y="0.0" width="210" height="60"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghm-bq-BmY">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LT8-89-B1X" userLabel="Rotate Button">
                                     <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
-                                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                    <state key="normal" title="">
+                                    <state key="normal" image="editorrotate">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="rotateButtonTapped:" destination="-1" eventType="touchUpInside" id="mK2-tI-h62"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghm-bq-BmY">
+                                    <rect key="frame" x="45" y="0.0" width="30" height="60"/>
+                                    <size key="titleShadowOffset" width="1" height="0.0"/>
+                                    <state key="normal" image="editorcrop">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                                     </state>
@@ -98,7 +109,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLX-iy-2Rc">
-                                    <rect key="frame" x="45" y="0.0" width="30" height="60"/>
+                                    <rect key="frame" x="90" y="0.0" width="30" height="60"/>
                                     <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
                                     <state key="normal" title="">
@@ -109,11 +120,10 @@
                                         <action selector="stickersButtonTapped:" destination="-1" eventType="touchUpInside" id="snI-Px-Ngx"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm4-f6-DBr">
-                                    <rect key="frame" x="90" y="0.0" width="30" height="60"/>
-                                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm4-f6-DBr">
+                                    <rect key="frame" x="135" y="0.0" width="30" height="60"/>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                    <state key="normal" title="">
+                                    <state key="normal" image="editorpaint">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                                     </state>
@@ -121,11 +131,10 @@
                                         <action selector="drawButtonTapped:" destination="-1" eventType="touchUpInside" id="uts-mM-XHI"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-LJ-SyD">
-                                    <rect key="frame" x="135" y="0.0" width="30" height="60"/>
-                                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-LJ-SyD">
+                                    <rect key="frame" x="180" y="0.0" width="30" height="60"/>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                    <state key="normal" title="">
+                                    <state key="normal" image="editortext">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                                     </state>
@@ -198,11 +207,10 @@
                                         <action selector="shareButtonTapped:" destination="-1" eventType="touchUpInside" id="ZTG-wV-jfh"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpe-Ez-Cio">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpe-Ez-Cio">
                                     <rect key="frame" x="90" y="0.0" width="30" height="52"/>
-                                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="25"/>
                                     <size key="titleShadowOffset" width="1" height="0.0"/>
-                                    <state key="normal" title="">
+                                    <state key="normal" image="trash">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                                     </state>
@@ -212,14 +220,24 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNH-TU-KxG">
-                            <rect key="frame" x="352" y="-14" width="50" height="62"/>
-                            <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNH-TU-KxG" customClass="RoundButton" customModule="Audi_BusinessPics">
+                            <rect key="frame" x="352" y="-2" width="50" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="ZmI-rx-frT"/>
+                                <constraint firstAttribute="height" constant="50" id="h5B-y1-N4x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
                             <size key="titleShadowOffset" width="1" height="0.0"/>
-                            <state key="normal" title="">
+                            <state key="normal" image="okbig">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="continueButtonPressed:" destination="-1" eventType="touchUpInside" id="0k9-Sl-9QG"/>
                             </connections>
@@ -250,21 +268,16 @@
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAt-sK-1nK">
                     <rect key="frame" x="182" y="800" width="50" height="50"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqh-uS-U1m">
-                            <rect key="frame" x="9.6666666666666572" y="10" width="31" height="30"/>
-                            <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="30"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
-                            <size key="shadowOffset" width="1" height="0.0"/>
-                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKv-W2-cgU">
+                            <rect key="frame" x="12" y="12" width="27" height="27"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="trash"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="Cbh-qN-Nr4"/>
-                        <constraint firstItem="sqh-uS-U1m" firstAttribute="centerY" secondItem="yAt-sK-1nK" secondAttribute="centerY" id="ZDd-OE-AiH"/>
                         <constraint firstAttribute="height" constant="50" id="iud-MD-vZ2"/>
-                        <constraint firstItem="sqh-uS-U1m" firstAttribute="centerX" secondItem="yAt-sK-1nK" secondAttribute="centerX" id="vx8-XT-NVx"/>
                     </constraints>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-ap-fH9" userLabel="Color Picker">
@@ -325,4 +338,12 @@
             <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
         </view>
     </objects>
+    <resources>
+        <image name="editorcrop" width="27" height="27"/>
+        <image name="editorpaint" width="27" height="27"/>
+        <image name="editorrotate" width="27" height="27"/>
+        <image name="editortext" width="27" height="27"/>
+        <image name="okbig" width="27" height="27"/>
+        <image name="trash" width="27" height="27"/>
+    </resources>
 </document>
