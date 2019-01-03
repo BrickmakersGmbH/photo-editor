@@ -18,6 +18,7 @@ public enum control {
     case save
     case share
     case clear
+    case rotate
 }
 
 extension PhotoEditorViewController {
@@ -32,7 +33,7 @@ extension PhotoEditorViewController {
     @IBAction func cropButtonTapped(_ sender: UIButton) {
         let controller = CropViewController()
         controller.delegate = self
-        controller.image = image
+        controller.image = self.canvasView.toImage()
         let navController = UINavigationController(rootViewController: controller)
         present(navController, animated: true, completion: nil)
     }
@@ -132,6 +133,8 @@ extension PhotoEditorViewController {
                 stickerButton.isHidden = true
             case .text:
                 stickerButton.isHidden = true
+            case .rotate:
+                rotateButton.isHidden = true
             }
         }
     }
