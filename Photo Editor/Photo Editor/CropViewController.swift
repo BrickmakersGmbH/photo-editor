@@ -96,7 +96,15 @@ open class CropViewController: UIViewController {
         }
         
         navigationController?.isToolbarHidden = toolbarHidden
+ 
         
+        UINavigationBar.appearance().barTintColor = .black
+        UINavigationBar.appearance().tintColor = .white
+        navigationController?.toolbar.barTintColor = .black
+        navigationController?.toolbar.tintColor = .white
+
+        
+
         cropView?.image = image
         cropView?.rotationGestureRecognizer.isEnabled = rotationEnabled
     }
