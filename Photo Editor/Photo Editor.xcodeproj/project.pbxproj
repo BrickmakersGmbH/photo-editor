@@ -44,6 +44,22 @@
 		059EA71D1EACB8790072C0FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059EA71C1EACB8790072C0FE /* AppDelegate.swift */; };
 		059EA7241EACB8790072C0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059EA7231EACB8790072C0FE /* Assets.xcassets */; };
 		059EA7271EACB8790072C0FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059EA7251EACB8790072C0FE /* LaunchScreen.storyboard */; };
+		43219047232F794900BF2615 /* UIImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43219046232F794900BF2615 /* UIImage+Rotate.swift */; };
+		43219054232F79B600BF2615 /* editorrotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219048232F79B400BF2615 /* editorrotate@3x.png */; };
+		43219055232F79B600BF2615 /* editortext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219049232F79B500BF2615 /* editortext@2x.png */; };
+		43219056232F79B600BF2615 /* editortext@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4321904A232F79B500BF2615 /* editortext@3x.png */; };
+		43219057232F79B600BF2615 /* editorrotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 4321904B232F79B500BF2615 /* editorrotate.png */; };
+		43219058232F79B600BF2615 /* editorcrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4321904C232F79B500BF2615 /* editorcrop.png */; };
+		43219059232F79B600BF2615 /* editorcrop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4321904D232F79B500BF2615 /* editorcrop@2x.png */; };
+		4321905A232F79B600BF2615 /* editorcrop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4321904E232F79B500BF2615 /* editorcrop@3x.png */; };
+		4321905B232F79B600BF2615 /* editorpaint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4321904F232F79B500BF2615 /* editorpaint@2x.png */; };
+		4321905C232F79B600BF2615 /* editorpaint@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219050232F79B500BF2615 /* editorpaint@3x.png */; };
+		4321905D232F79B600BF2615 /* editorrotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219051232F79B500BF2615 /* editorrotate@2x.png */; };
+		4321905E232F79B600BF2615 /* editortext.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219052232F79B600BF2615 /* editortext.png */; };
+		4321905F232F79B600BF2615 /* editorpaint.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219053232F79B600BF2615 /* editorpaint.png */; };
+		43219063232F79C200BF2615 /* okbig@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219060232F79C100BF2615 /* okbig@3x.png */; };
+		43219064232F79C200BF2615 /* okbig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219061232F79C100BF2615 /* okbig@2x.png */; };
+		43219065232F79C200BF2615 /* okbig.png in Resources */ = {isa = PBXBuildFile; fileRef = 43219062232F79C100BF2615 /* okbig.png */; };
 		D0B54048235DE0E4004C4A62 /* PhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B5404A235DE0E4004C4A62 /* PhotoEditorViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +105,22 @@
 		059EA7281EACB8790072C0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B54050235DE464004C4A62 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/PhotoEditorViewController.xib; sourceTree = "<group>"; };
 		D0B54051235DE464004C4A62 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PhotoEditorViewController.xib; sourceTree = "<group>"; };
+		43219046232F794900BF2615 /* UIImage+Rotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotate.swift"; sourceTree = "<group>"; };
+		43219048232F79B400BF2615 /* editorrotate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editorrotate@3x.png"; sourceTree = "<group>"; };
+		43219049232F79B500BF2615 /* editortext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editortext@2x.png"; sourceTree = "<group>"; };
+		4321904A232F79B500BF2615 /* editortext@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editortext@3x.png"; sourceTree = "<group>"; };
+		4321904B232F79B500BF2615 /* editorrotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editorrotate.png; sourceTree = "<group>"; };
+		4321904C232F79B500BF2615 /* editorcrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editorcrop.png; sourceTree = "<group>"; };
+		4321904D232F79B500BF2615 /* editorcrop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editorcrop@2x.png"; sourceTree = "<group>"; };
+		4321904E232F79B500BF2615 /* editorcrop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editorcrop@3x.png"; sourceTree = "<group>"; };
+		4321904F232F79B500BF2615 /* editorpaint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editorpaint@2x.png"; sourceTree = "<group>"; };
+		43219050232F79B500BF2615 /* editorpaint@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editorpaint@3x.png"; sourceTree = "<group>"; };
+		43219051232F79B500BF2615 /* editorrotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editorrotate@2x.png"; sourceTree = "<group>"; };
+		43219052232F79B600BF2615 /* editortext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editortext.png; sourceTree = "<group>"; };
+		43219053232F79B600BF2615 /* editorpaint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editorpaint.png; sourceTree = "<group>"; };
+		43219060232F79C100BF2615 /* okbig@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okbig@3x.png"; sourceTree = "<group>"; };
+		43219061232F79C100BF2615 /* okbig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okbig@2x.png"; sourceTree = "<group>"; };
+		43219062232F79C100BF2615 /* okbig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = okbig.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +159,24 @@
 				0565130B1EF489B4009EA38F /* ColorsCollectionViewDelegate.swift */,
 				0565130C1EF489B4009EA38F /* EmojiCollectionViewCell.swift */,
 				0565130D1EF489B4009EA38F /* EmojisCollectionViewDelegate.swift */,
+				4321904C232F79B500BF2615 /* editorcrop.png */,
+				4321904D232F79B500BF2615 /* editorcrop@2x.png */,
+				4321904E232F79B500BF2615 /* editorcrop@3x.png */,
+				43219053232F79B600BF2615 /* editorpaint.png */,
+				4321904F232F79B500BF2615 /* editorpaint@2x.png */,
+				43219050232F79B500BF2615 /* editorpaint@3x.png */,
+				4321904B232F79B500BF2615 /* editorrotate.png */,
+				43219051232F79B500BF2615 /* editorrotate@2x.png */,
+				43219048232F79B400BF2615 /* editorrotate@3x.png */,
+				43219052232F79B600BF2615 /* editortext.png */,
+				43219049232F79B500BF2615 /* editortext@2x.png */,
+				4321904A232F79B500BF2615 /* editortext@3x.png */,
 				0565130E1EF489B4009EA38F /* StickerCollectionViewCell.swift */,
 				0565130F1EF489B4009EA38F /* UIImage+Size.swift */,
 				056513101EF489B4009EA38F /* UIImageView+Alpha.swift */,
+				43219062232F79C100BF2615 /* okbig.png */,
+				43219061232F79C100BF2615 /* okbig@2x.png */,
+				43219060232F79C100BF2615 /* okbig@3x.png */,
 				056513111EF489B4009EA38F /* UIView+Image.swift */,
 				056513121EF489B4009EA38F /* Protocols.swift */,
 				056513131EF489B4009EA38F /* GradientView.swift */,
@@ -143,6 +190,7 @@
 				0565133F1EF489CD009EA38F /* PhotoEditor+Drawing.swift */,
 				056513401EF489CD009EA38F /* PhotoEditor+Keyboard.swift */,
 				056513411EF489CD009EA38F /* PhotoEditor+StickersViewController.swift */,
+				43219046232F794900BF2615 /* UIImage+Rotate.swift */,
 				056513421EF489CD009EA38F /* PhotoEditor+UITextView.swift */,
 				056513431EF489CD009EA38F /* PhotoEditor+Controls.swift */,
 				056513441EF489CD009EA38F /* PhotoEditor+Crop.swift */,
@@ -207,6 +255,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				de,
@@ -226,17 +275,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43219054232F79B600BF2615 /* editorrotate@3x.png in Resources */,
 				059EA7271EACB8790072C0FE /* LaunchScreen.storyboard in Resources */,
+				43219055232F79B600BF2615 /* editortext@2x.png in Resources */,
+				43219059232F79B600BF2615 /* editorcrop@2x.png in Resources */,
 				0565133B1EF489C0009EA38F /* PhotoCropEditorBorder@3x.png in Resources */,
 				D0B54048235DE0E4004C4A62 /* PhotoEditorViewController.xib in Resources */,
+				4321905C232F79B600BF2615 /* editorpaint@3x.png in Resources */,
+				43219056232F79B600BF2615 /* editortext@3x.png in Resources */,
+				43219065232F79C200BF2615 /* okbig.png in Resources */,
+				0565133D1EF489C0009EA38F /* PhotoEditorViewController.xib in Resources */,
+				4321905A232F79B600BF2615 /* editorcrop@3x.png in Resources */,
 				059EA7241EACB8790072C0FE /* Assets.xcassets in Resources */,
 				056513351EF489C0009EA38F /* ColorCollectionViewCell.xib in Resources */,
 				0565133A1EF489C0009EA38F /* PhotoCropEditorBorder@2x.png in Resources */,
+				43219057232F79B600BF2615 /* editorrotate.png in Resources */,
 				0565133C1EF489C0009EA38F /* StickerCollectionViewCell.xib in Resources */,
+				4321905E232F79B600BF2615 /* editortext.png in Resources */,
 				056513371EF489C0009EA38F /* icomoon.ttf in Resources */,
 				056513381EF489C0009EA38F /* LaunchScreen.storyboard in Resources */,
 				056513341EF489C0009EA38F /* StickersViewController.xib in Resources */,
 				056513361EF489C0009EA38F /* EmojiCollectionViewCell.xib in Resources */,
+				4321905D232F79B600BF2615 /* editorrotate@2x.png in Resources */,
+				43219058232F79B600BF2615 /* editorcrop.png in Resources */,
+				4321905F232F79B600BF2615 /* editorpaint.png in Resources */,
+				4321905B232F79B600BF2615 /* editorpaint@2x.png in Resources */,
+				43219064232F79C200BF2615 /* okbig@2x.png in Resources */,
+				43219063232F79C200BF2615 /* okbig@3x.png in Resources */,
 				056513391EF489C0009EA38F /* PhotoCropEditorBorder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +337,7 @@
 				056513241EF489B4009EA38F /* GradientView.swift in Sources */,
 				059EA71D1EACB8790072C0FE /* AppDelegate.swift in Sources */,
 				0565134B1EF489CD009EA38F /* PhotoEditor+Controls.swift in Sources */,
+				43219047232F794900BF2615 /* UIImage+Rotate.swift in Sources */,
 				056513211EF489B4009EA38F /* UIImageView+Alpha.swift in Sources */,
 				056513291EF489B4009EA38F /* ResizeControl.swift in Sources */,
 			);
