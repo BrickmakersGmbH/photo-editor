@@ -8,8 +8,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "photo-editor",
-            targets: ["photo-editor"]),
+            name: "iOSPhotoEditor",
+            targets: ["iOSPhotoEditor"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,6 +23,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "photo-editorTests",
-            dependencies: ["photo-editor"]),
+            dependencies: ["iOSPhotoEditor"]),
     ]
 )
