@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "iOSPhotoEditor",
             dependencies: [],
-            path: "."),
+            path: "Photo Editor"),
         .testTarget(
             name: "photo-editorTests",
             dependencies: ["iOSPhotoEditor"]),
